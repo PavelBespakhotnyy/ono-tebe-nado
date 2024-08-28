@@ -25,10 +25,30 @@ blockquote {
   padding: 0;
 }
 
+h1{
+  font-size: 100px;
+}
+
 a {
   color: inherit;
 }
 
 img {
   width: 100%;
+}
+
+header {
+  display: flex;  
+  min-width: 1052px;
+  min-height: 105px;
+  padding: 92px 24px 96px 24px;
+
+}
+
+li {
+  font-size: 18px;
+}
+
+ul {
+  display: list-item;
 }

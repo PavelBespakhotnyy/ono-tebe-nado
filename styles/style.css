@@ -1,1 +1,159 @@
-/* место для вашего кода */
+.menu {
+  display: flex;
+  width: 391px;
+  height: 22px;
+  text-wrap: nowrap;
+  align-items: center;
+  gap: 32px;
+  margin: 44px 36px 39px 26px;
+  justify-content: space-between;
+/*Making bullets in list white inside*/
+  list-style-image: url(/images/list_marker.svg);
+}
+
+.logo {
+  width: 148px;
+  height: 105px;
+}
+
+.contacts {
+  margin: 5px 25px 0px 184px;
+  font-size: 18px;
+  list-style: none;
+  width: 240px;
+  height: 98px;
+  line-height: 25px;
+}
+
+.phone {
+  text-decoration: underline;
+}
+
+.email {
+  text-decoration: underline;
+}
+
+.address {
+  text-wrap: wrap;
+}
+
+.cover-picture {
+  display: grid;
+  width: 1100px;
+  height: 757px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.title-first-word {
+  display: flex;
+  letter-spacing: 0.3em;
+  text-align: left;
+  width: 316px;
+  height: 115px;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.title-second-word {
+  display: flex;
+  font-weight: 700;
+  margin: 135px 345px 120px -30px;
+  width: 316px;
+  font-family: Raleway;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+  text-align: left;
+}
+
+.title-third-word {
+  display: flex;
+  margin: 255px 0 0 -363px;
+  width: 417px;
+  line-height: 100px;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 0.6em;
+  text-align: right;
+}
+
+/*Буквы "НО" в слове "ОНО"*/
+.first-letters {
+  letter-spacing: 0.6em;
+  text-align: left;
+}
+
+/*Буквы "БЕ" в слове "ТЕБЕ"*/
+.second-letters {
+  letter-spacing: 0.6em;
+  text-align: left;
+}
+
+/*Буквы "АД" в слове "НАДО"*/
+.third-letters {
+  letter-spacing: 0.3em;
+  text-align: right;
+}
+
+.text-over-image {
+  display: flex;
+  width: 1000px;
+  height: 355px;
+  margin: 165px 50px 237px 50px;
+}
+
+.description {
+  display: flex;
+  margin: -90px 0 0 78px;
+  width: 637px;
+  
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 0.9em;
+  text-align: left;
+ 
+  text-wrap: nowrap;
+  justify-content: space-between;
+
+  letter-spacing: 110%;
+  
+}
+
+/* Не знаю что сделал сдесь, увидел в figma "span(в)", поэтому скопировал сюда настройки оттуда*/
+.letter-b {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1.1em;
+  text-align: left;
+  margin: 0 0 0 20px;
+}
+
+.place-bid-button {
+  display: flex;
+  
+  margin: -100px 0 0 793px;
+  
+  border: white solid 1px;
+  width: 256px;
+  height: 51px;
+  
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  
+  
+
+
+}
