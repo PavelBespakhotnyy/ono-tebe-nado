@@ -42,7 +42,7 @@ header {
   min-width: 1052px;
   min-height: 105px;
   padding: 92px 24px 96px 24px;
-
+  text-underline-offset: 3px;
 }
 
 li {

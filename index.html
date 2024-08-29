@@ -17,7 +17,7 @@
         <a href="#about"><li>об аукционе</li></a>
       </ul>
 
-      <img class="logo" src="./images/logo-black.svg"> </img>
+      <img class="logo-black" src="./images/logo-black.svg" alt="Черный логотип ОНО ТЕБЕ НАДО"> </img>
 
       <ul class="contacts">
         <li class="phone">+9 999 555 5555</li>
@@ -30,27 +30,59 @@
 
     <main>
 
-      <cover class="cover-picture">
+      <section class="cover-picture">
         <div class="text-over-image">
-          <div class="title-first-word">о<span class="first-letters">но</span></div>
-          <div class="title-second-word">те<span class="second-letters">бе</span></div>
-          <div class="title-third-word">н<span class="third-letters">ад</span>о</div>
+          <h1 class="title-first-word">О<span class="first-letters">НО</span></h1>
+          <h1 class="title-second-word">ТЕ<span class="second-letters">БЕ</span></h1>
+          <h1 class="title-third-word"><span class="letter-with-spacing">Н</span><span class="third-letters">АД</span>О </h1>
         </div>
 
-        <p class="description">Аукцион вещей, <span class="letter-b">в</span> которые никто не верил</p>
+        <a class="description">Аукцион вещей, <span class="description-wider-text">в которые никто не верил</span></a>
 
-        <p class="place-bid-button">сделать ставку</p>
+        <div class="place-bid-button-area"><a href="#" class="place-bid-button">сделать ставку</a></div>
+      </section>
 
-      </cover>
 
-
-      <lots>
-
+      <lots class="lots-cards" id="lots">
+        <h2 class="lots-text">ЛОТЫ</h2>
+        <div class="first-card">
+          <p class="card-headline">Фильм режиссёра, который бросил киношколу</p>
+          <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша 
+            ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+        </div>
+        <div class="second-card">
+          <p class="card-headline">Книга, где описан один скучный день из жизни рекламного агента</p>
+          <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания 
+            и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 
+            1904 года и об истории литературы, начиная с античных времён. И это всё 
+            накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+        </div>
+        <div class="third-card">
+          <p class="card-headline">Картина, которую повторит даже 5-летний сын маминой подруги</p>
+          <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и 
+            вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, 
+            котиков... Сколько бы вы на такое поставили, если бы не знали, что это — 
+            одна из революционных работ Кандинского?</p>
+        </div>
+        <div class="view-more-button"><a href="#" class="view-more-button-text">посмотреть больше</a></div>
       </lots>
 
 
-      <about>
-
+      <about id="about">
+        <div class="about">
+          <div class="logo-white-space"><img class="logo-white" src="./images/logo-white.svg" alt="Белый логотип ОНО ТЕБЕ НАДО"></div>
+          <div class="about-auction-information">
+            <h3 class="about-auction-inforamtion-headline">Об аукционе</h3>
+            <p class="first-paragraph">Здесь вы не встретите очередное пафосное 
+              собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на 
+              один аукцион. Потому что кому нужен дневник девочки-подростка или картина, 
+              которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+            <p class="second-paragraph">Слишком сложные или, наоборот, слишком простые. Опережающие<br> своё время. В пух и прах 
+              растерзанные критиками. Непринятые и<br> непонятые. Когда-то они казались просто неудачными. Но, несмотря<br> на критику, 
+              кажущуюся простоту или сложность, сейчас без этих лотов<br> невозможно представить современную культуру. Когда в эти 
+              вещи не<br> верил никто, продолжали верить их создатели. И сейчас эти лоты<br> стали культовыми.</p>
+          </div>
+        
       </about>
 
 

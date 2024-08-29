@@ -11,13 +11,13 @@
   list-style-image: url(/images/list_marker.svg);
 }
 
-.logo {
+.logo-black {
   width: 148px;
   height: 105px;
 }
 
 .contacts {
-  margin: 5px 25px 0px 184px;
+  margin: 5px 25px 0px 186px;
   font-size: 18px;
   list-style: none;
   width: 240px;
@@ -36,124 +36,235 @@
 .address {
   text-wrap: wrap;
 }
-
+/* ---------- Блок со словами "ОНО ТЕБЕ НАДО" внутри картины ---------- */
 .cover-picture {
-  display: grid;
-  width: 1100px;
-  height: 757px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 757px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/cover.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
   color: white;
-  text-transform: uppercase;
-}
-
-.title-first-word {
-  display: flex;
-  letter-spacing: 0.3em;
-  text-align: left;
-  width: 316px;
-  height: 115px;
-  font-size: 100px;
-  font-weight: 700;
-}
-
-.title-second-word {
-  display: flex;
-  font-weight: 700;
-  margin: 135px 345px 120px -30px;
-  width: 316px;
-  font-family: Raleway;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 100px;
-  letter-spacing: 0.3em;
-  text-align: left;
-}
-
-.title-third-word {
-  display: flex;
-  margin: 255px 0 0 -363px;
-  width: 417px;
-  line-height: 100px;
-  font-size: 100px;
-  font-weight: 700;
-  letter-spacing: 0.6em;
-  text-align: right;
-}
-
-/*Буквы "НО" в слове "ОНО"*/
-.first-letters {
-  letter-spacing: 0.6em;
-  text-align: left;
-}
-
-/*Буквы "БЕ" в слове "ТЕБЕ"*/
-.second-letters {
-  letter-spacing: 0.6em;
-  text-align: left;
-}
-
-/*Буквы "АД" в слове "НАДО"*/
-.third-letters {
-  letter-spacing: 0.3em;
-  text-align: right;
+  margin: 0 0 179px;
 }
 
 .text-over-image {
   display: flex;
+  flex-direction: column;
   width: 1000px;
   height: 355px;
-  margin: 165px 50px 237px 50px;
+  margin: 165px 50px 0 50px;
 }
 
-.description {
+
+/* Первое слово "ОНО" */
+.title-first-word {
+  letter-spacing: 0.3em;
+}
+
+.first-letters {
+  letter-spacing: 0.6em;
+}
+
+/* Второк слово "ТЕБЕ" */
+.title-second-word {
   display: flex;
-  margin: -90px 0 0 78px;
-  width: 637px;
-  
-  font-family: Raleway;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 28px;
-  word-spacing: 0.9em;
-  text-align: left;
- 
-  text-wrap: nowrap;
-  justify-content: space-between;
-
-  letter-spacing: 110%;
-  
+  margin: 10px 0 0 0;
+  align-self: center;
+  letter-spacing: 0.3em;
 }
 
-/* Не знаю что сделал сдесь, увидел в figma "span(в)", поэтому скопировал сюда настройки оттуда*/
-.letter-b {
-  font-family: Raleway;
+.second-letters {
+  position: relative;
+  letter-spacing: 0.6em;
+}
+
+/* Первое слово "НАДО" */
+.title-third-word {
+  align-self: flex-end;
+  /* letter-spacing: 0.6em; */
+}
+
+.letter-with-spacing {
+  letter-spacing: 0.6em;
+}
+
+.third-letters {
+  letter-spacing: 0.3em;
+}
+
+/* Описание */
+.description {
   font-size: 22px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 1.1em;
-  text-align: left;
-  margin: 0 0 0 20px;
+  text-transform: uppercase;
+  word-spacing: 20px;
+  margin: 147px 79px 62px 78px;
+}
+
+.description-wider-text {
+  word-spacing: 18px;
+}
+
+/* Кнопка сделать ставку */
+.place-bid-button-area {
+  display: flex;
+  min-width: 256px;
+  height: 51px;
+  border: 1px 0px 0px 0px;
+  margin: 134px 0 0 0;
+  
 }
 
 .place-bid-button {
-  display: flex;
-  
-  margin: -100px 0 0 793px;
-  
-  border: white solid 1px;
-  width: 256px;
-  height: 51px;
-  
-  justify-content: center;
-  align-items: center;
   font-size: 22px;
-  font-weight: 500;
-  
-  
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 32px;
+  border: 1px solid white;
+}
+
+/* ---------- Раздел карточек ---------- */
+
+.lots-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* min-width: 1052px;
+  min-height: 692px; */
+  margin: 0 24px 146px 24px;
+}
+
+/* Надпись над картами */
+.lots-text {
+  margin: 0 100% 27px 40px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Первая карта */
+.first-card {
+  display: flex;
+  width: 334px;
+  height: 563px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/card-lot-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+/* Заголовки карт */
+.card-headline {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 51px 40px 0 40px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+
+/* Текст карт */
+.card-text {
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto 40px 48px 40px;
+}
+
+/* Вторая карта */
+.second-card {
+  display: flex;
+  width: 334px;
+  height: 563px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/card-lot-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+/* Третья карта */
+.third-card {
+  display: flex;
+  width: 334px;
+  height: 563px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/card-lot-03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+/* Кнопка показать больше */
+.view-more-button {
+  margin: 30px auto 2px 40px;
+  font-size:20px;
+  text-underline-offset: 5px;
+}
+
+.view-more-button-text {
+  text-decoration-thickness: 1px;
+}
+
+/* ---------- Раздле об аукционе ---------- */
+
+.about {
+  display: flex;
+  width: 1052px;
+  height: 595px;
+  margin: 0 0 180px 0;
+}
+
+/* Логотип */
+.logo-white-space {
+  display: flex;
+  margin: 35px 72px 0 71px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+  align-items: center;
+}
+
+.logo-white {
+  width: 240px;
+  height: 114px;
+}
+
+/* Текст об аукционе */
+.about-auction-information {
+  display: flex;
+  margin: 133px 0 0 0;
+  flex-wrap: wrap;
+  width: 693px;
+}
+
+.about-auction-inforamtion-headline {
+  margin-bottom: 100px;
+  width: 100%;
+  font-size: 40px;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+}
+
+.first-paragraph {
+  letter-spacing: 0.004em;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 25px;
+}
 
 
+.second-paragraph {
+  text-wrap: nowrap;
+  letter-spacing: 0.004em;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
