@@ -113,9 +113,8 @@
   display: flex;
   min-width: 256px;
   height: 51px;
-  border: 1px 0px 0px 0px;
+  border: 1px;
   margin: 134px 0 0 0;
-  
 }
 
 .place-bid-button {
