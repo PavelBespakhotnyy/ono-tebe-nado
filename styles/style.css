@@ -252,7 +252,7 @@
   text-transform: uppercase;
 }
 
-.about-paragraphs {
+.about-information {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -268,12 +268,12 @@
 
 
 .second-paragraph {
-  letter-spacing: 0.004em;
+  font-family: Raleway;
+  font-style: normal;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  text-wrap: wrap;
 }
 
 /* ---------- Footer ---------- */
