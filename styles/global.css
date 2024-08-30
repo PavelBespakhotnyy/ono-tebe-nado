@@ -37,13 +37,6 @@ img {
   width: 100%;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr 148px 1fr;
-  padding: 90px 24px 95px 24px;
-  text-underline-offset: 3px;
-}
-
 li {
   font-size: 18px;
 }
