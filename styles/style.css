@@ -1,12 +1,10 @@
 /* ---------- Header ---------- */
 .menu-header {
   display: flex;
-  width: 391px;
-  height: 22px;
   text-wrap: nowrap;
   align-items: center;
   gap: 32px;
-  margin: 44px 36px 39px 26px;
+  padding: 44px 36px 39px 26px;
   justify-content: space-between;
 /*Making bullets in list white inside*/
   list-style-image: url(/images/list_marker.svg);
@@ -18,11 +16,10 @@
 }
 
 .contacts-header {
-  margin: 5px 25px 0px 186px;
+  padding: 5px 25px 2px 186px;
   font-size: 18px;
   list-style: none;
-  width: 240px;
-  height: 98px;
+  min-width: 240px;
   line-height: 25px;
 }
 
@@ -216,7 +213,6 @@
   display: flex;
   width: 1052px;
   height: 595px;
-  margin: 0 0 180px 0;
 }
 
 /* Логотип */
@@ -267,37 +263,43 @@
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  text-wrap: wrap;
 }
 
 /* ---------- Footer ---------- */
 
 .footer {
-  display: flex;
-  margin: 0 50px 88px 50px;
-  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 180px 50px 88px 50px;
+  width: 1100px;
   justify-content: space-between;
 }
 
 /* Навигационное меню */
-.menu-footer {
+.menu-footer-space {
   display: flex;
-  flex-wrap: wrap;
-  width: 149px;
   justify-content: center;
-  
+  text-align: center;
+}
+
+.menu-footer {
 /*Making bullets in listinvisible*/
   list-style: none;
 }
 
 .main-button {
+  display: block;
   text-underline-offset: 4px;
 }
 
 .lots-button {
+  display: block;
   text-underline-offset: 4px;
 }
 
 .about-button {
+  display: block;
   text-underline-offset: 4px;
 }
 
@@ -314,7 +316,9 @@
 .socials {
   display: flex;
   gap: 48px;
+  justify-content: flex-end;
 }
+
 .youtube-image {
   width: 48px;
   height: 48px;
