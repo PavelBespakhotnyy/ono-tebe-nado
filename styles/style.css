@@ -12,16 +12,9 @@
   text-wrap: nowrap;
   align-items: center;
   gap: 32px;
-  min-width: 392px;
-  max-width: 454px;
-  padding: 44px 36px 39px 26px;
-  justify-content: space-between;
+  justify-content: center;
 /*Making bullets in list white inside*/
   list-style-image: url(/images/list_marker.svg);
-}
-
-.menu-header li {
-  text-wrap: nowrap;
 }
 
 .logo-black {
