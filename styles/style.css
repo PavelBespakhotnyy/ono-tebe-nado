@@ -1,10 +1,14 @@
 /* ---------- Header ---------- */
 .header {
   display: grid;
-  height: 293px;
   grid-template-columns: 1fr 148px 1fr;
   padding: 92px 24px 96px 24px;
   text-underline-offset: 3px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
 }
 
 .menu-header {
@@ -13,20 +17,30 @@
   align-items: center;
   gap: 32px;
   justify-content: center;
-/*Making bullets in list white inside*/
-  list-style-image: url(/images/list_marker.svg);
+  list-style: circle;
+}
+
+.no-text-decoration{
+  list-style: none;
 }
 
 .logo-black {
   height: 105px;
 }
 
-.contacts-header {
-  padding: 5px 25px 2px 186px;
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  justify-self: end;
+  width: 240px;
   font-size: 18px;
-  list-style: none;
-  min-width: 240px;
   line-height: 25px;
+}
+
+.header .contacts {
+  position: relative;
+  right: 26px;
 }
 
 .phone {
@@ -40,12 +54,12 @@
 .address {
   text-wrap: wrap;
 }
+
 /* ---------- Блок со словами "ОНО ТЕБЕ НАДО" внутри картины ---------- */
 .cover-picture {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 757px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
@@ -57,45 +71,35 @@
 .text-over-image {
   display: flex;
   flex-direction: column;
-  width: 1000px;
-  height: 355px;
-  margin: 165px 50px 0 50px;
-}
+  width: 100%;
+  margin: 160px 50px 0 50px;
+  text-transform: uppercase;
+} 
 
 
 /* Первое слово "ОНО" */
-.title-first-word {
+.text-align-left {
   letter-spacing: 0.3em;
 }
 
-.first-letters {
+.letter-spacing-standart {
   letter-spacing: 0.6em;
 }
 
 /* Второк слово "ТЕБЕ" */
-.title-second-word {
+.text-align-center {
   display: flex;
   margin: 10px 0 0 0;
   align-self: center;
   letter-spacing: 0.3em;
 }
 
-.second-letters {
-  position: relative;
-  letter-spacing: 0.6em;
-}
-
 /* Первое слово "НАДО" */
-.title-third-word {
+.text-align-right {
   align-self: flex-end;
-  /* letter-spacing: 0.6em; */
 }
 
-.letter-with-spacing {
-  letter-spacing: 0.6em;
-}
-
-.third-letters {
+.letter-spacing-small {
   letter-spacing: 0.3em;
 }
 
@@ -114,10 +118,8 @@
 /* Кнопка сделать ставку */
 .place-bid-button-area {
   display: flex;
-  min-width: 256px;
-  height: 51px;
   border: 1px;
-  margin: 134px 0 0 0;
+  padding: 134px 0 50px 0;
 }
 
 .place-bid-button {
@@ -134,26 +136,46 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* min-width: 1052px;
-  min-height: 692px; */
-  margin: 0 24px 146px 24px;
+  gap: 25px;
+  margin: 0 24px 177px 24px;
+}
+
+.lots-cards li {
+  list-style: none;
 }
 
 /* Надпись над картами */
 .lots-text {
-  margin: 0 100% 27px 40px;
+  margin: 0 100% 27px 65px;
   font-size: 40px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* Первая карта */
-.first-card {
+.left-card {
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-01.jpg);
+
+}
+/* Вторая карта */
+.center-card {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-02.jpg);
+}
+
+/* Третья карта */
+.right-card {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-03.jpg);
+}
+
+/* Общее правило для всех карт */
+.card {
   display: flex;
   width: 334px;
   height: 563px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   color: white;
   flex-wrap: wrap;
@@ -176,35 +198,11 @@
   margin: auto 40px 48px 40px;
 }
 
-/* Вторая карта */
-.second-card {
-  display: flex;
-  width: 334px;
-  height: 563px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-  flex-wrap: wrap;
-}
-
-/* Третья карта */
-.third-card {
-  display: flex;
-  width: 334px;
-  height: 563px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-  flex-wrap: wrap;
-}
-
 /* Кнопка показать больше */
 .view-more-button {
-  margin: 30px auto 2px 40px;
+  position: relative;
+  left: 64px;
+  top: -147px;
   font-size:20px;
   text-underline-offset: 5px;
 }
@@ -218,7 +216,6 @@
 .about {
   display: flex;
   width: 1052px;
-  height: 595px;
   margin: 0 24px 0 24px;
 }
 
@@ -242,7 +239,8 @@
   display: flex;
   margin: 133px 0 0 0;
   flex-wrap: wrap;
-  width: 693px;
+  max-width: 693px;
+  width: 100%;
 }
 
 .about-auction-inforamtion-headline {
@@ -258,18 +256,9 @@
   gap: 24px;
 }
 
-.first-paragraph {
+.paragraph {
+  font-family: Raleway, sans-serif;
   letter-spacing: 0.004em;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-}
-
-
-.second-paragraph {
-  font-family: Raleway;
-  font-style: normal;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -294,13 +283,15 @@
 }
 
 .menu-footer {
-/*Making bullets in listinvisible*/
+/*Making bullets in list invisible*/
   list-style: none;
 }
 
 .main-button {
   display: block;
   text-underline-offset: 4px;
+  text-decoration: none;
+  list-style-type: "";
 }
 
 .lots-button {
@@ -314,14 +305,6 @@
 }
 
 /* Контакты */
-.contacts-footer {
-  font-size: 18px;
-  list-style: none;
-  width: 240px;
-  height: 98px;
-  line-height: 25px;
-}
-
 /* Соц-сети */
 .socials {
   display: flex;
@@ -329,20 +312,15 @@
   justify-content: flex-end;
 }
 
-.youtube-image {
+.socials li {
+  list-style: none;
+}
+
+.image-socials {
   width: 48px;
   height: 48px;
 }
 
-.vk-image {
-  width: 48px;
-  height: 48px;
-}
-
-.pinterest-image {
-  width: 48px;
-  height: 48px;
-}
 
 /* Кнопки перехода на разные элементы страницы меняются при наведении на них */
 .main-button:hover {
