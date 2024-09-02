@@ -20,7 +20,7 @@
   list-style: circle;
 }
 
-.no-text-decoration{
+.no-text-decoration {
   list-style: none;
 }
 
@@ -173,7 +173,6 @@
   display: flex;
   width: 334px;
   height: 563px;
-  background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
