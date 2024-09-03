@@ -2,7 +2,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  padding: 92px 24px 96px 24px;
+  padding: 92px 24px 92px 24px;
   text-underline-offset: 3px;
 }
 
@@ -33,7 +33,7 @@
   flex-direction: column;
   font-style: normal;
   justify-self: end;
-  width: 240px;
+  max-width: 240px;
   font-size: 18px;
   line-height: 25px;
 }
@@ -65,7 +65,7 @@
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  margin: 0 0 179px;
+  margin: 0 0 179px 0;
 }
 
 .text-over-image {
@@ -131,13 +131,12 @@
 }
 
 /* ---------- Раздел карточек ---------- */
-
 .lots-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 25px;
-  margin: 0 24px 177px 24px;
+  margin: 0 24px 30px 24px;
 }
 
 .lots-cards li {
@@ -146,7 +145,7 @@
 
 /* Надпись над картами */
 .lots-text {
-  margin: 0 100% 27px 65px;
+  margin: 0 0 27px 65px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -199,9 +198,7 @@
 
 /* Кнопка показать больше */
 .view-more-button {
-  position: relative;
-  left: 64px;
-  top: -147px;
+  margin: 0 0 0 64px;
   font-size:20px;
   text-underline-offset: 5px;
 }
@@ -215,7 +212,7 @@
 .about {
   display: flex;
   width: 1052px;
-  margin: 0 24px 0 24px;
+  margin: 146px 24px 0 24px;
 }
 
 /* Логотип */
